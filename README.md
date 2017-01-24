@@ -89,7 +89,8 @@ export default class DataFactory {
 
 # API
 Table
-Property | Description | Type | Default
+
+| Property | Description | Type | Default |
 ---|---|---|---
 dataSource | data record array to be rendered | any[] | []
 columns | columns of table | Column[] | []
@@ -98,7 +99,8 @@ renderCell | render function | function | undefined
 height | table height | number | 240
 
 Column
-Property | Description | Type | Default
+
+| Property | Description | Type | Default |
 ---|---|---|---
 title | title of this column | string | -
 dataIndex | display field of the data record | string | -
