@@ -1,0 +1,27 @@
+{
+  "name": "react-native-simple-table",
+  "version": "0.0.2",
+  "description": "A simple table for react native.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeepeng/react-native-simple-table.git"
+  },
+  "keywords": [
+    "react-native-simple-table",
+    "react-native-table",
+    "react-native-data-table",
+    "simple table",
+    "table"
+  ],
+  "author": "Jeepeng",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Jeepeng/react-native-simple-table/issues"
+  },
+  "homepage": "https://github.com/Jeepeng/react-native-simple-table#readme",
+  "dependencies": {}
+}
