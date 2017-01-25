@@ -1,6 +1,8 @@
 # react-native-simple-table
 A simple table for react native.
 
+![screenshot](screenshots/screenshot.png)
+
 # Installation
 `npm install react-native-simple-table --save`
 
