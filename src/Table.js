@@ -2,13 +2,14 @@
  * Created by Jeepeng on 2016/11/20.
  */
 
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import {
   StyleSheet,
   View,
   ScrollView,
   Text
 } from 'react-native'
+import PropTypes from 'prop-types'
 
 const DEFAULT_HEIGHT = 240;
 const DEFAULT_COLUMN_WIDTH = 60;
