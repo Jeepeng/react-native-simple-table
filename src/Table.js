@@ -24,8 +24,8 @@ class Table extends Component {
     })).isRequired,
     columnWidth: PropTypes.number,
     height: PropTypes.number,
-    dataSource: React.PropTypes.array.isRequired,
-    renderCell: React.PropTypes.func,
+    dataSource: PropTypes.array.isRequired,
+    renderCell: PropTypes.func,
   };
 
   static defaultProps = {
