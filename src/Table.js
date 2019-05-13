@@ -26,6 +26,10 @@ class Table extends Component {
     height: PropTypes.number,
     dataSource: PropTypes.array.isRequired,
     renderCell: PropTypes.func,
+    headerContainerStyle: PropTypes.object,
+    bodyContainerStyle: PropTypes.object,
+    headerStyle: PropTypes.object,
+    bodyStyle: PropTypes.object,
   };
 
   static defaultProps = {
@@ -33,25 +37,30 @@ class Table extends Component {
     dataSource: [],
     columnWidth: DEFAULT_COLUMN_WIDTH,
     height: DEFAULT_HEIGHT,
-    renderCell: undefined
+    renderCell: undefined,
+    headerContainerStyle: {},
+    bodyContainerStyle: {},
+    headerStyle: {},
+    bodyStyle: {},
   };
 
   _renderCell(cellData, col) {
+    const { bodyStyle, bodyContainerStyle } = this.props
     let style = {width: col.width || this.props.columnWidth || DEFAULT_COLUMN_WIDTH};
     return (
-      <View key={col.dataIndex} style={[styles.cell, style]}>
-        <Text>{cellData}</Text>
+      <View key={col.dataIndex} style={[styles.cell, bodyContainerStyle, style]}>
+        <Text style={bodyStyle} >{cellData}</Text>
       </View>
     )
   }
 
   _renderHeader() {
-    let { columns, columnWidth } = this.props;
+    let { columns, columnWidth, headerStyle, headerContainerStyle } = this.props;
     return columns.map((col, index) => {
       let style = {width: col.width || columnWidth || DEFAULT_COLUMN_WIDTH};
       return (
-        <View key={index} style={[styles.headerItem, style]}>
-          <Text>{col.title}</Text>
+        <View key={index} style={[styles.headerItem, headerContainerStyle, style]}>
+          <Text style={headerStyle} >{col.title}</Text>
         </View>
       )
     })
