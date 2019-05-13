@@ -99,6 +99,10 @@ columns | columns of table | Column[] | []
 columnWidth | column width | number | 60
 renderCell | render function | function | undefined
 height | table height | number | 240
+headerContainerStyle | header container style | object | {}
+headerStyle | header text style | object | {}
+bodyContainerStyle | body container style | object | {}
+bodyStyle | body text style | object | {}
 
 Column
 
