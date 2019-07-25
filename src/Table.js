@@ -73,11 +73,17 @@ class Table extends Component {
     }
     return (
       <View key={index} style={styles.row}>
-        {
-          columns.map(col => renderCell(col.dataIndex.split(".").reduce(function(prev, curr) {
-            return prev ? prev[curr] : null
-        }, rowData || self), col))
-        }
+        {columns.map(col =>
+          renderCell(
+            col.dataIndex
+              .split('.')
+              .reduce(
+                (prev, curr) => (prev ? prev[curr] : null),
+                rowData || self
+              ),
+            col
+          )
+        )}
       </View>
     );
   }
